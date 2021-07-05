@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "6e9b9690-0f09-492c-8975-9512140d6bdd",
+		"name": "Home Works2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Book",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/book/darov",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"darov"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"da\",\r\n    \"author\":\"ivan\",\r\n    \"year_pub\":2003,\r\n    \"price\":1232.45,\r\n    \"amount\":147,\r\n    \"isbn\": \"56\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put UPdate book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\": \"bob\",\r\n    \"year_pub\": 2003,\r\n    \"price\": 1232.45,\r\n    \"amount\": 147,\r\n    \"isbn\": \"56\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/book/da",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/book/skaj",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"skaj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Register Users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"vano2149\",\r\n    \"email\" : \"ivan@ivan.com\",\r\n    \"password\" : \"qwerty\",\r\n    \"first_name\" : \"ivan\",\r\n    \"second_name\" : \"kal'ko\",\r\n    \"credit_card\" : \"1234-4321-5678-8769\",\r\n    \"city\" : \"mascow\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Journals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/journals",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"journals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Journal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"zdarov\",\r\n    \"pages\" : 57,\r\n    \"price\" : 130.54,\r\n    \"amount\" : 8\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/journals",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"journals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Journal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/journal/zdarov",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"journal",
+						"zdarov"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Journal Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pages\" : 100,\r\n    \"price\" : 19.54,\r\n    \"amount\" : 12\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/journal/zdarov",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"journal",
+						"zdarov"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Journal",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1ODUxMjQsImlhdCI6MTYyMDU4NDgyNCwibmJmIjoxNjIwNTg0ODI0LCJpZGVudGl0eSI6MX0.nZNQB1Jw5zznjthWNhUQ_BZXf-wVtbKor0g28yQLsxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/journal/zdarov",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"journal",
+						"zdarov"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"vano2149\",\r\n    \"password\":\"qwerty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/auth",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
